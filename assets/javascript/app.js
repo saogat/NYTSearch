@@ -32,13 +32,8 @@ $("search-button").on("click", function () {
             url: url,
             method: 'GET',
         }).done(function (result) {
-
-            console.log(result);
-            result.response.docs.forEach(function (each) {
-                console.log(each.headline);
-            });
-
-
+            for (var i=0; i<aSearch.retrieveMax; i++){
+            console.log(result.response.docs[i].headline);}
         }).fail(function (err) {
             throw err;
         });
