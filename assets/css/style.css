@@ -1,0 +1,239 @@
+
+.jumbotron{
+    background-color: black;
+}
+
+
+
+.myname {
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800px;
+  color: #08157f;
+  padding-left: 60px;
+}
+.myname,
+.nav-color {
+  color: #08157f;
+}
+
+.nav-blue {
+  color: red;
+}
+
+.navbar-brand {
+  padding-top: 30px;
+  margin-left: 40px;
+}
+
+.navbar-header {
+  background-color: none;
+}
+
+.profilepic {
+  height: 100%;
+  width: 100%;
+}
+
+.dorian {
+}
+
+.mypic1 {
+  text-align: center;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+.mainpic {
+  /* background-color: #18bc9c; */
+  padding-bottom: 10px;
+  padding-top: 15px;
+
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+#bs-example-navbar-collapse-1 {
+  /* background-color: #0a3240; */
+}
+
+.container-fluid {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.portfoliopics {
+  padding-top: 30px;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-bottom: 90px;
+  margin-bottom: 40px;
+}
+h1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.container-fluid > .navbar-collapse,
+.container-fluid > .navbar-header,
+.container > .navbar-collapse,
+.container > .navbar-header {
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 15px;
+}
+
+.navbar-nav {
+  font-size: 19px;
+  font-size: 22px;
+  margin-right: 55px;
+  margin-top: 18px;
+}
+
+.subtext1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+a.port-nav {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+.maintext {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  /* text-shadow: 3px 1px 1px #000; */
+  margin-bottom: -20px;
+  padding-top: 130px;
+}
+
+.fluid-container.mainpic {
+  background-image: url(../images/bluebckd4.jpg);
+  max-width: 100%;
+  max-height: 100%;
+  padding-bottom: 1px;
+}
+
+.fluid-container.footer {
+  background-color: black;
+  padding-bottom: 50px;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.img-with-text {
+  text-align: justify;
+  width: 250px;
+}
+
+.about-text {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 58px;
+  font-weight: 800px;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2.about-me-text {
+  margin-bottom: 40px;
+}
+
+h2.portfolio-text {
+  padding-top: 55px;
+  color: white;
+}
+
+h3 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+h4 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 67px;
+  font-weight: 800;
+  margin-top: 40px;
+  margin-bottom: 120px;
+  padding-top: 40px;
+}
+h5 {
+  color: w#08157f;
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 70px;
+}
+
+#message-input {
+  height: 34px;
+}
+
+hr {
+  padding: 0;
+  font-weight: 200;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 250px;
+  margin: 25px auto 30px;
+}
+
+iframe {
+  text-align: center;
+}
+
+.whitetext {
+  color: white;
+}
+
+.your-centered-div {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 55px;
+  margin-top: 37px;
+}
+
+.blue-bckd {
+  background-color: #08157f;
+}
+.blue-bckd2 {
+  background-color: white;
+}
+.about-col {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.navbar-default-brand-color {
+  color: red;
+}
