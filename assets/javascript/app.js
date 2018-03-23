@@ -1,11 +1,13 @@
-$("search-button").on("click", function () {
-    var searchTerm = $("#search");
-    var retrieveMax = $("#exampleFormControlSelect1");
-    var beginYear = $("#starYear");
-    var endYear = $("endYear");
+$("#search-button").on("click", function (event) {
+    console.log("working");
+    event.preventDefault();
+    var searchTerm = $("#search").val();
+    var retrieveMax = $("#exampleFormControlSelect1").val();
+    var beginYear = $("#startYear").val();
+    var endYear = $("#endYear").val();
 
     beginYear = beginYear + "0101";
-    endYear = end + "1231";
+    endYear = endYear + "1231";
 
     var aSearch = {
         searchTerm: searchTerm,
@@ -14,12 +16,21 @@ $("search-button").on("click", function () {
         endYear: endYear
     }
 
+    console.log(aSearch);
+
     function search(aSearch) {
 
         var searchTerm = aSearch.searchTerm;
         var retrieveMax = aSearch.retrieveMax;
         var beginYear = aSearch.beginYear;
         var endYear = aSearch.endYear;
+
+       
+        console.log("searchTerm " + searchTerm);
+        console.log("retrieveMax " + retrieveMax);
+        console.log("beginYear " + beginYear);
+        console.log("endYear " + endYear);
+
 
         var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
         url += '?' + $.param({
@@ -33,7 +44,9 @@ $("search-button").on("click", function () {
             method: 'GET',
         }).done(function (result) {
             for (var i=0; i<aSearch.retrieveMax; i++){
-            console.log(result.response.docs[i].headline);}
+                $("#results").append($("<p>").text(JSON.stringify(result.response.docs[i].headline.main)));
+            console.log(result.response.docs[i].headline.main);
+            console.log(result.response.docs[i])}
         }).fail(function (err) {
             throw err;
         });
@@ -41,4 +54,10 @@ $("search-button").on("click", function () {
     }
 
     search(aSearch);
+});
+
+$("#clear-button").on("click", function (event) {
+    console.log("working");
+    event.preventDefault();
+    $("#results").empty();
 });
